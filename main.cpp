@@ -31,7 +31,6 @@ int main(int argc, char const *argv[]){
 			if (historial.size()>0){
 				for (int i = 0; i < historial.size(); ++i){
 					printf("%d) %s\n", i, historial[i]);
-					//cout<<historial[i]<<endl;
 				}
 				cout<<endl;
 				opcion=menu();
