@@ -12,14 +12,10 @@ public:
 	string toString() const;
 	const Racional& operator=(const Racional&);
 	const Racional operator-() const;
-	const Racional& operator+=(const Racional&);
-	const Racional& operator-=(const Racional&);
-	const Racional& operator*=(const Racional&);
-	const Racional& operator/=(const Racional&);
+	const Racional operator+(const Racional&);
+	const Racional operator-(const Racional&);
+	const Racional operator*(const Racional&);
+	const Racional operator/(const Racional&);
 	friend ostream& operator<<(ostream&, const Racional&);
 	friend istream& operator>>(istream&, Racional&);
 };
-const Racional operator+(const Racional&, const Racional&);
-const Racional operator-(const Racional&, const Racional&);
-const Racional operator*(const Racional&, const Racional&);
-const Racional operator/(const Racional&, const Racional&);
